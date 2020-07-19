@@ -1,0 +1,58 @@
+.divStyle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: -150px;
+  margin-left: -150px;
+}
+
+.zero {
+  top: 3%;
+  left: 50%;
+}
+.one {
+  top: 10%;
+  left: 70%;
+}
+.two {
+  top: 25%;
+  left: 83%;
+}
+.three {
+  top: 47%;
+  left: 90%;
+}
+.four {
+  top: 69%;
+  left: 83%;
+}
+.five {
+  top: 83%;
+  left: 70%;
+}
+.six {
+  top: 90%;
+  left: 50%;
+}
+.eleven {
+  top: 10%;
+  right: 70%;
+}
+.ten {
+  top: 25%;
+  right: 83%;
+}
+.nine {
+  top: 47%;
+  right: 90%;
+}
+.eight {
+  top: 69%;
+  right: 83%;
+}
+.seven {
+  top: 83%;
+  right: 70%;
+}
