@@ -62,18 +62,12 @@ class Counter extends Component {
   render() {
     return (
       <span className="rounded-circle bg-dark divStyle">
-        <span className={this.getBadgeClasses(0)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(1)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(2)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(3)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(4)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(5)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(6)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(7)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(8)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(9)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(10)}>{this.state.level}</span>
-        <span className={this.getBadgeClasses(11)}>{this.state.level}</span>
+        {this.state.bulbs.map((bulb) => (
+          <span key={bulb.id} className={this.getBadgeClasses(bulb.id)}>
+            {" "}
+            {this.state.level}
+          </span>
+        ))}
         <button
           style={{ top: "120%", left: "33%" }}
           onClick={this.changeBulbColor}
